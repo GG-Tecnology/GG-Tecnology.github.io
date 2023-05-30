@@ -1,0 +1,366 @@
+:root {
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #00092ca2;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 0.1rem solid #00092ca2;
+  background: hsla(0, 0%, 100%, 0.1);
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+    inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+body::-webkit-scrollbar-button {
+  height: 60px;
+}
+
+.habilidade-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.habilidade-item {
+  min-width: 50%;
+  scroll-snap-align: start;
+}
+
+.habilidade-item img {
+  margin-left: 7rem;
+  width: 12rem;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 3rem; /* for vertical scrollbar */
+  height: 0.7rem; /* for horizontal scrollbar */
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: gray;
+  border-radius: 3rem;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5rem;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 5rem;
+}
+
+.habilidades {
+  margin-bottom: 5rem;
+}
+
+.habidade-title {
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+body {
+  background-color: #000415;
+}
+
+nav {
+  position: fixed;
+  margin-top: 7rem;
+  margin-left: 5rem;
+  margin-bottom: 7rem;
+  width: 35rem;
+  height: 65rem;
+  background-color: #00092c;
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: white;
+}
+
+nav .Topo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .Topo img {
+  margin-top: 2rem;
+  width: 20rem;
+  border-radius: 8rem;
+}
+
+nav .Topo h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+nav .Topo p {
+  color: white;
+  background-color: rgb(255, 0, 0);
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+nav .separador {
+  background-color: rgb(63, 63, 63);
+  width: 90%;
+  height: 1.3px;
+  margin: 0.2rem;
+  margin-inline: auto;
+}
+
+nav .email {
+  color: white;
+  font-size: 1.5rem;
+  margin-inline: 25%;
+  display: flex;
+  align-items: center;
+}
+
+nav .telefone {
+  color: white;
+  font-size: 1.5rem;
+  margin-inline: 25%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav .localizacao {
+  color: white;
+  font-size: 1.5rem;
+  margin-inline: 25%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav .Infos {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+nav .Infos p {
+  margin-top: 0;
+}
+
+nav .Infos h5 {
+  margin-bottom: 0.4rem;
+}
+
+nav .info img {
+  width: 5rem;
+}
+nav .SocialMidias {
+  display: flex;
+  margin-top: 2rem;
+  margin-inline: 30%;
+  gap: 3rem;
+}
+nav .SocialMidias img {
+  width: 3rem;
+}
+
+body .Caixa {
+  position: absolute;
+  margin-left: 45rem;
+  margin-top: 7rem;
+  background-color: #00092c;
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: white;
+  width: 100rem;
+}
+
+body .Caixa .Menu {
+  position: absolute;
+  width: 25rem;
+  height: 30rem;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20rem;
+  margin-left: 5rem;
+
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: white;
+}
+
+body .Caixa .Menu .itens {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+body .Caixa .Menu .itens h1 {
+  color: white;
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+body .Caixa .Menu .itens button {
+  color: white;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.1rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+body .Caixa .Aulas img {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body .Caixa #Home {
+  position: absolute;
+  z-index: 2;
+  margin-left: 6rem;
+  margin-top: 3.5rem;
+  background-color: red;
+  border: solid;
+  border-radius: 2rem;
+  border-width: 0.1rem;
+  border-color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+body .Caixa a:hover {
+  color: gray;
+}
+
+body .Caixa a {
+  text-decoration: none;
+  color: white;
+}
+
+body .Caixa .Aulas {
+  margin-top: 3rem;
+  margin-left: 35rem;
+  position: absolute;
+  width: 60rem;
+  height: 65rem;
+  background-color: red;
+  border-radius: 3rem;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.1rem;
+}
+
+body .Caixa .Aulas .DesenvolvimentoWeb {
+  display: flex;
+}
+
+body .Caixa .Aulas .DesenvolvimentoWeb .Icones {
+  position: absolute;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+
+body .Caixa .Aulas .DesenvolvimentoWeb .Html {
+  position: absolute;
+  margin-top: 4rem;
+  margin-left: 13rem;
+  width: 45rem;
+  height: 13rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 3rem;
+  border-color: white;
+}
+
+body .Caixa .Aulas .DesenvolvimentoWeb .Css {
+  position: absolute;
+  margin-top: 25rem;
+  margin-left: 13rem;
+  width: 45rem;
+  height: 13rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 3rem;
+  border-color: white;
+}
+
+body .Caixa .Aulas .DesenvolvimentoWeb .JavaScript {
+  position: absolute;
+  margin-top: 46rem;
+  margin-left: 13rem;
+  width: 45rem;
+  height: 13rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 3rem;
+  border-color: white;
+}
+
+body .Caixa .Aulas .DesenvolvimentoWeb {
+  display: none;
+}
+body .Caixa .Aulas .DesenvolvimentoWeb.On {
+  display: contents;
+}
+
+body .Caixa .Block {
+  content: '';
+  width: 100rem;
+  height: 70rem;
+  background-color: transparent;
+}
+
+footer .rodape {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 65rem;
+  margin-bottom: 2rem;
+}
+.Mobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  .Desktop {
+    display: none;
+  }
+  .Mobile {
+    display: contents;
+  }
+}
